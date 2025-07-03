@@ -1,7 +1,11 @@
 from sentinelhub import SHConfig
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def get_sentinel_config():
     config = SHConfig()
-    config.sh_client_id = 'c6408ade-53f5-4cba-8403-124f312679b3'
-    config.sh_client_secret = 'UbBVBVUBXfxhFjSgEqaFP3wspaV6APJf'
+    config.sh_client_id = os.getenv("CLIENT_ID")
+    config.sh_client_secret = os.getenv("CLIENT_SECRET")
     return config
