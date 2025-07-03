@@ -122,6 +122,7 @@ Make sure to set the necessary environment variables (e.g., Sentinel Hub credent
 ## 📸 ML Model Integration
 
 The model (`.h5` file) is integrated into the backend and used during the `/predict-image` endpoint to generate heatmaps from satellite images.
+currently the model is not in models directory so you can download it from [here](https://www.kaggle.com/models/sharadvyas/green-guard) and add it to models directory for prediction .
 
 
 ## Created by me and @anmol1140w
