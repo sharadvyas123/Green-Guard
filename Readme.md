@@ -122,3 +122,6 @@ Make sure to set the necessary environment variables (e.g., Sentinel Hub credent
 ## 📸 ML Model Integration
 
 The model (`.h5` file) is integrated into the backend and used during the `/predict-image` endpoint to generate heatmaps from satellite images.
+
+
+## Created by me and @anmol1140w
