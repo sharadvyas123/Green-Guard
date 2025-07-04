@@ -69,16 +69,16 @@ const LoginPage = () => {
 
     return (
         <>
-            <div className="min-h-screen flex justify-center items-center bg-gradient-to-br from-green-200 via-green-400 to-green-600 px-5 py-24">
-                <div className='max-w-1/3 flex flex-col justify-start items-start gap-2'>
+            <div className="min-h-screen md:flex md:flex-row justify-center items-center md:gap-0  bg-gradient-to-br from-green-200 via-green-400 to-green-600 px-5 py-24">
+                <div className='md:max-w-1/3 flex flex-col md:justify-start justify-center items-start md:gap-2'>
                     <motion.div
                         initial={{ opacity: 0, x: -40 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
                     >
                         <img src={logo} alt="logo" className='w-20 rounded-full my-5' />
-                        <h1 className='text-5xl font-bold text-white'>Hello</h1>
-                        <h1 className='text-5xl font-bold text-white'>Green Guard ! 👋</h1>
+                        <h1 className='text-5xl font-bold text-white'>Hello 👋</h1>
+                        <h1 className='text-5xl font-bold text-white'>Green Guard ! </h1>
                         <h1 className='text-2xl font-bold text-white text-wrap'>Green Guard , Check your nearby tree population !!</h1>
                     </motion.div>
                 </div>
@@ -88,7 +88,7 @@ const LoginPage = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <div className='flex flex-col gap-6 justify-center items-center '>
-                        <h1 className='text-3xl font-bold text-white'>Login With Account </h1>
+                        <h1 className='text-3xl font-bold text-white my-5'>Login With Account </h1>
                         <form
                             onSubmit={handleSubmit(onsubmit)}
                             className="form flex  flex-col justify-center items-center p-5 bg-white/10 backdrop-blur-md rounded-2xl shadow-xl z-10 border border-white/20"
